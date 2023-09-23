@@ -1,4 +1,5 @@
 import { exec } from "child_process";
+import config from './config.js'
 class Shell {
     static async write(text) {
         return await new Promise((resolve) => {
@@ -58,5 +59,5 @@ class States extends Colors {
 }
 class Constants {
 }
-Constants.IPA_FETCH_LINK = "https://ipa.aspy.dev/discord/testflight/Discord_197.0_49832.ipa";
+Constants.IPA_FETCH_LINK = config.version;
 export { Shell, Colors, Divider, States, Constants };
