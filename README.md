@@ -1,23 +1,39 @@
-Give your Enmity app a touch of personality with Customcord!
+# Customcord - Personalize Your Enmity App
 
-First add an image you want to be the app icon, name it logo.png, else edit the "logoPath" property in `config.js`.
+Enhance your Enmity app with a touch of personality using Customcord!
 
-Then edit the "appName" property in `config.js`.
+Customcord allows you to customize various aspects of your Enmity app, including its icon, name, and version. Follow these simple steps to make your Enmity app uniquely yours:
 
-Finally, if you want to change the version of the app go to https://ipa.aspy.dev/discord and copy the direct link of an ipa file.
+## Setting Up Your Custom Enmity App
 
-It will look something like this: https://ipa.aspy.dev/discord/testflight/Discord_197.0_49832.ipa
+### 1. App Icon
 
-You're `config.js` file should look a little something like this
+Begin by selecting an image that you'd like to use as the app icon. Save this image as "logo.png" in your project directory. If you prefer a different name or location for your icon, you can customize it by editing the "logoPath" property in the `config.js` file.
+
+### 2. App Name
+
+Customize your Enmity app's name to reflect your unique branding. To do this, locate the "appName" property in the `config.js` file and update it with your desired app name.
 
 ```js
 export default {
     logoPath: "logo.png",
-    appName: "Enmity",
+    appName: "Your_Custom_App_Name",
     version: "https://ipa.aspy.dev/discord/testflight/Discord_197.0_49832.ipa"
 }
 ```
 
-Then, enable GitHub actions and manually trigger the workflow.
+### 3. App Version
 
-It will automatically build in the future.
+To specify the version of your app, visit [https://ipa.aspy.dev/discord](https://ipa.aspy.dev/discord) and copy the direct link to the desired IPA file. It should resemble something like this:
+
+```
+https://ipa.aspy.dev/discord/testflight/Discord_197.0_49832.ipa
+```
+
+Paste this link into the "version" property within your `config.js` file.
+
+## Automate Your Workflow
+
+To streamline the process of building your custom Enmity app, you can enable GitHub Actions and manually trigger the workflow. Once enabled, your app will automatically build in the future, saving you time and effort.
+
+With Customcord, your Enmity app can reflect your unique style and branding. Give it a personalized touch today!
